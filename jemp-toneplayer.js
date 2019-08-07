@@ -52,7 +52,7 @@ const _sampler = new Tone.Sampler({
     }).sync().toMaster()
 
 
-function toneToNumberWrapper(toneToWrap){
+function _toneToNumberWrapper(toneToWrap){
 
     let value = null
     switch(toneToWrap){
@@ -108,7 +108,7 @@ function toneToNumberWrapper(toneToWrap){
     return value
 }
 
-function numberToToneWrapper(numberToWrap){
+function _numberToToneWrapper(numberToWrap){
 
     let value = null
     switch(numberToWrap){
@@ -162,10 +162,14 @@ function numberToToneWrapper(numberToWrap){
         case  46 : value ="D5"  ; break;
     }
     return value
+
 }
 
+function positionToTone(posX, posY){
+    return _numberToToneWrapper(_getsound(posX, posY))
+}
 
-function getsound(posX, posY){
+function _getsound(posX, posY){
 
     let soundNr = 0;
     
@@ -190,10 +194,9 @@ function getsound(posX, posY){
     return soundNr;                              
 }
 
-//playTone(numberToToneWrapper(getsound(10,5)))
-function playTone(tone){
-    _sampler.triggerAttack(tone)
+//play sound immediately
+function playTone(posX, posY){
+    _sampler.triggerAttack(_numberToToneWrapper(_getsound(posX, posY)))
 }
 
 
- 

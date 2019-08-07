@@ -2,13 +2,14 @@ var _tonelist = []
 var jempSequencer = {
 
 
-    addTonesToList: function (tone, time, velocity = 1, posX, posY) {
+    addTonesToList: function (tone, time, velocity = 1, posX, posY, color) {
         _tonelist.push(new function () {
             this.tone = tone
             this.time = time
             this.velocity = velocity
             this.posX = posX
             this.posY = posY
+            this.color = color
         })
     },
 
@@ -29,7 +30,7 @@ var jempSequencer = {
         }
     },
 
-    scheduleTones: function (time) {
+    scheduleJempTones: function (time) {
         Tone.Transport.schedule(this._triggerTone, time)
         this._drawTone()
     }

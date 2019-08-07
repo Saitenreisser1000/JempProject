@@ -22,7 +22,22 @@ document.querySelector('#loadbutton').addEventListener('click', () =>{
 
 });
 
+$('#recordbutton').click(function(){
+    $(".recordPoint").toggle("fast");
+    $("#inputbox").toggle("fast");
+});
 
+//which point is pressed
+$('.recordPoint').click(function(){
+    recordlayer.clickRecorder(this);
+    $(this).css("background-color", "green");
+});
+
+//test send to php
+$('#loadbutton').click(function(){
+    new loadSong();
+
+});
 
 function updateTime() {
     requestAnimationFrame(updateTime)

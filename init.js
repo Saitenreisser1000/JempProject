@@ -5,7 +5,7 @@
     var guitar = new guitarBuilder(27,50,60);
 
     //create record field and hide for defaultmode
-    //recordlayer.recordFields();
+    recordlayer.recordFields();
     $('.recordPoint').hide();
     
     //set transport _fader to 0

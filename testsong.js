@@ -29,8 +29,8 @@ function toneLoader() {
     jempSequencer.addTonesToList("F#4", "4:1", 1, 2, 5)
     jempSequencer.addTonesToList("F#3", "4:1", 1, 2, 5)
 
-    jempSequencer.scheduleTones()
+    jempSequencer.scheduleJempTones()
 }
 
 
-
+//jempTone -> numer, tone, posX, posY, time, color
