@@ -27,22 +27,9 @@ var table = new Tabulator("#songTable", {
     //load default song
     dataLoaded:function(data){
         var defaultSong = data[0];          //choose default song
-        var songData = defaultSong.songData;
-        var songName = defaultSong.songName;
-        _sendSongToLoad(songData, songName);
+        prepareLoadedSong.setSong(defaultSong)
+        //jempSequencer.songToLoad(prepareLoadedSong.setSong(defaultSong));
+        //$('#loadedSong').html(jempSequencer.getNameOfLoadedSong());
     }
-    
-    
 });
-
-//sends song to sequencer
-_sendSongToLoad = function(sData, sName){
-        //sequencer.songToLoad(new songData(sData), sName);
-        //sequencer.endSequencer();
-        
-        //sets transport maximum to maximumlenth from song
-        //document.getElementById("transportFader").max =  dataProcess.songEnd();
-        //document.getElementById("transportFader").value = 0;
-        //$('#loadedSong').html(sequencer.getNameOfLoadedSong());
-}
 

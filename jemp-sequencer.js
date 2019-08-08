@@ -1,5 +1,5 @@
 var _tonelist = []
-var jempSequencer = {
+const jempSequencer = {
 
 
     addTonesToList: function (tone, time, velocity = 1, posX, posY, color) {
@@ -35,5 +35,5 @@ var jempSequencer = {
         this._drawTone()
     }
 
-}
 
+}

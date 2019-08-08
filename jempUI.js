@@ -1,3 +1,6 @@
+
+/*Sequencer********************************/
+
 document.querySelector('#startbutton').addEventListener("click", e => {
     if(Tone.Transport.state === 'started')
         Tone.Transport.pause()
@@ -22,22 +25,9 @@ document.querySelector('#loadbutton').addEventListener('click', () =>{
 
 });
 
-$('#recordbutton').click(function(){
-    $(".recordPoint").toggle("fast");
-    $("#inputbox").toggle("fast");
-});
 
-//which point is pressed
-$('.recordPoint').click(function(){
-    recordlayer.clickRecorder(this);
-    $(this).css("background-color", "green");
-});
 
-//test send to php
-$('#loadbutton').click(function(){
-    new loadSong();
-
-});
+/*update sequencer**********************/
 
 function updateTime() {
     requestAnimationFrame(updateTime)
@@ -65,3 +55,27 @@ function moveFader(){
     })
 
 }
+
+
+//Record**************************************/
+
+$('#recordbutton').click(function(){
+    $(".recordPoint").toggle("fast");
+    $("#inputbox").toggle("fast");
+});
+
+//which point is pressed
+$('.recordPoint').click(function(){
+    console.log(this)
+    recordlayer.clickRecorder(this);
+    $(this).css("background-color", "green");
+});
+
+//test send to php
+$('#loadbutton').click(function(){
+    loadSong();
+
+});
+
+
+

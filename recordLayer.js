@@ -89,13 +89,6 @@ const recordlayer = {
     }
 }
 
-//which point is pressed
-$('.recordPoint').click(function(){
-    recordlayer.clickRecorder(this);
-    $(this).css("background-color", "green");
-});
-
-
 //song is saved
 $(document).ready(function() {
     $('#savebutton').click(function() {

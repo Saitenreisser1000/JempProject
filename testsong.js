@@ -32,5 +32,3 @@ function toneLoader() {
     jempSequencer.scheduleJempTones()
 }
 
-
-//jempTone -> numer, tone, posX, posY, time, color
