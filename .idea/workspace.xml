@@ -6,15 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7ff60143-bc5b-4c8e-afb6-f12ce032d9b8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dataTransfer.js" beforeDir="false" afterPath="$PROJECT_DIR$/dataTransfer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jemp-sequencer.js" beforeDir="false" afterPath="$PROJECT_DIR$/jemp-sequencer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jemp-toneplayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/jemp-toneplayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jempUI.js" beforeDir="false" afterPath="$PROJECT_DIR$/jempUI.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/recordLayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/recordLayer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/prepareLoadedSong.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/prepareLoadedSong.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/songTable.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testsong.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1496">
-              <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+            <state relative-caret-position="51">
+              <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -45,11 +37,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataTransfer.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="87">
-              <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+            <state relative-caret-position="51">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -111,18 +103,19 @@
         <option value="$PROJECT_DIR$/testsong.js" />
         <option value="$PROJECT_DIR$/songTable.js" />
         <option value="$PROJECT_DIR$/scripts/prepareLoadedSong.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/jemp-sequencer.js" />
         <option value="$PROJECT_DIR$/jemp-toneplayer.js" />
         <option value="$PROJECT_DIR$/jempUI.js" />
         <option value="$PROJECT_DIR$/recordLayer.js" />
         <option value="$PROJECT_DIR$/dataTransfer.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="974" />
+    <option name="x" value="453" />
+    <option name="y" value="45" />
+    <option name="width" value="968" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -131,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -147,7 +141,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -208,7 +201,8 @@
       <workItem from="1565344747369" duration="961000" />
       <workItem from="1565346056600" duration="111000" />
       <workItem from="1565352594505" duration="878000" />
-      <workItem from="1565353732143" duration="523000" />
+      <workItem from="1565353732143" duration="2093000" />
+      <workItem from="1565364633018" duration="7706000" />
     </task>
     <task id="LOCAL-00001" summary="connect to ToneJs to Guitarjemp">
       <created>1565283174556</created>
@@ -217,17 +211,23 @@
       <option name="project" value="LOCAL" />
       <updated>1565283174556</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="connect to ToneJs to Guitarjemp">
+      <created>1565354287188</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1565354287188</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56581000" />
+    <option name="totallyTimeSpent" value="65857000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="453" y="45" width="968" height="1047" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989059" visible="true" weight="0.24786325" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4989059" visible="true" weight="0.24946237" />
       <window_info id="Structure" order="1" sideWeight="0.5010941" side_tool="true" weight="0.2991027" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -241,6 +241,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.07111597" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -284,13 +285,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/songTable.js" />
     <entry file="file://$PROJECT_DIR$/testsong.js" />
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1496">
-          <caret line="88" column="38" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jemp-toneplayer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="867">
@@ -326,10 +320,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/dataTransfer.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="87">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        <state relative-caret-position="51">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
