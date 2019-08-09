@@ -19,21 +19,23 @@ const jempSequencer = {
         }
     },
 
+    _initDrawCounter: function(){
+        //this._toneCounter = 0
+    },
+
     _drawTone: function (time) {
-        let _toneCounter = 0
-        for (tone of _tonelist) {
+        for (let i = 0; i < _tonelist.length; i++){
             Tone.Transport.schedule(function () {
-                positioning.set(_toneCounter, _tonelist[_toneCounter].posX, _tonelist[_toneCounter].posY);
-                _toneCounter++
-            }, tone.time)
+                positioning.set(i, _tonelist[i].posX, _tonelist[i].posY);
+            }, _tonelist[i].time)
 
         }
     },
 
     scheduleJempTones: function (time) {
         Tone.Transport.schedule(this._triggerTone, time)
+        this._initDrawCounter()
         this._drawTone()
-    }
-
+    },
 
 }

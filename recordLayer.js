@@ -71,23 +71,38 @@ const recordlayer = {
     //declare variables
     recordInit: function(){
         this.recordContainer = [];
-        this.timer = 50;
+        //this.counter = 0
     },
     
     //clicks get recorded and stored in recordContainer temporarily 
     clickRecorder: function(elem){
         var x = elem.getAttribute("fretPos");
         var y = elem.getAttribute("stringPos");
-        this.recordContainer.push(this.timer.toString()+"|"+x+"|"+y);
-        playTone((parseInt(x), parseInt(y)))
-        this.timer +=50;
+        playTone(parseInt(x), parseInt(y))
+        this.recordContainer.push(this.quarterCount().toString()+"|"+x+"|"+y)
     },
-    
+
+    bar : 0,
+    quarter : 0,
+    counter : 0,
+
+    quarterCount: function(){
+        this.counter++
+        this.quarter = (this.counter % 4) + 1
+        if (this.quarter === 1) {
+            this.bar++
+        }
+        return this.bar + ":" + this.quarter
+    },
+
     //get temp song
     getRecorded: function(){
         return this.recordContainer.toString();
     }
 }
+
+
+
 
 //song is saved
 $(document).ready(function() {

@@ -5,11 +5,14 @@ document.querySelector('#startbutton').addEventListener("click", e => {
     if(Tone.Transport.state === 'started')
         Tone.Transport.pause()
     else{
+        _sampler.sync()
         Tone.Transport.start()
+
     }
 })
 
 document.querySelector('#endbutton').addEventListener("click", e => {
+    jempSequencer._initDrawCounter()
     Tone.Transport.stop()
     jempSequencer._toneCounter = 0
     positioning.unSetAll()
@@ -56,17 +59,17 @@ function moveFader(){
 
 }
 
-
 //Record**************************************/
 
 $('#recordbutton').click(function(){
     $(".recordPoint").toggle("fast");
     $("#inputbox").toggle("fast");
+    Tone.Transport.stop()
+    _sampler.unsync()
 });
 
 //which point is pressed
 $('.recordPoint').click(function(){
-    console.log(this)
     recordlayer.clickRecorder(this);
     $(this).css("background-color", "green");
 });
