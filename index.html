@@ -3,6 +3,7 @@
 
 <html lang="en">
     <head>
+        <title>GuitarJemp</title>
         <link rel="stylesheet" href="styles/guitarJemp.css">
         <link rel="stylesheet" href="styles/guitarStyle.css">
         <link rel="stylesheet" href="styles/display.css">
@@ -11,8 +12,8 @@
         <link rel="stylesheet" href="styles/recordStyle.css">
         <link href="https://unpkg.com/tabulator-tables@4.2.1/dist/css/tabulator.min.css" rel="stylesheet">
         
-        <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
-        <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
         <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.2.1/dist/js/tabulator.min.js"></script>
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.8.12/Tone.js"></script>
@@ -40,9 +41,9 @@
                 
         <!--record system -->
                 <div id="recordField">
-                    <seqButton class="button" id="recordbutton">Record</seqButton>               
-                    <seqButton class="button" id="savebutton">Save</seqButton>
-                    <seqButton class="button" id="loadbutton">Load</seqButton>
+                    <button class="button" id="recordbutton">Record</button>
+                    <button class="button" id="savebutton">Save</button>
+                    <button class="button" id="loadbutton">Load</button>
                     <div id="loadedSong"></div>
                 </div>
 
@@ -66,8 +67,8 @@
                 
         <!--box for sequencerinput-->
                 <div id="inputbox">
-                    <seqButton class="button" id="startbutton">Start</seqButton>
-                    <seqButton class="button" id="endbutton">Reset</seqButton>
+                    <button class="button" id="startbutton">Start</button>
+                    <button class="button" id="endbutton">Reset</button>
                     
                     <div id="bpmBox">
                         <input type="range" id="bpmSpeed" min="0" max="200" step="1" >
@@ -91,16 +92,12 @@
         </div>
 
         <script type="text/javascript" src="guitarBuilder.js" ></script>
-
         <script type="text/javascript" src="dataTransfer.js"></script>
         <script type="text/javascript" src="scripts/prepareLoadedSong.js"></script>
         <script type="text/javascript" src="jemp-sequencer.js"></script>
         <script type="text/javascript" src="SetPoint.js"></script>
-
         <script type="text/javascript" src="jemp-toneplayer.js"></script>
-
         <script type="text/javascript" src="recordLayer.js"></script>
-
         <script type="text/javascript" src="init.js"></script>
         <script type="text/javascript" src="jempUI.js"></script>
 
