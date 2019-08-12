@@ -36,6 +36,7 @@ document.querySelector('#loadbutton').addEventListener('click', () =>{
 function updateTime() {
     requestAnimationFrame(updateTime)
     document.querySelector('#showBpm').textContent = Tone.Transport.position
+    jempSequencer._setSequencerEnd(7)
     moveFader()
 }
 

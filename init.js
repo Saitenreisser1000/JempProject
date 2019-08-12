@@ -10,11 +10,13 @@
     recordlayer.recordInit()
     
     //set transport _fader to 0
-    document.getElementById("transportFader").value = 0;
+    //document.getElementById("transportFader").max = 10;
     
     //send default song
     //toneLoader()
-    
+
+    /*****temp*********/
+    //jempSequencer._setSequencerEnd(10)
     
 })();
 
