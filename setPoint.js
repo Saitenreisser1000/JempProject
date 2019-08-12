@@ -4,11 +4,11 @@ SetPoint class
 sets point depending on posX and posY value
 */
 
-var SetPoint = function(posX, posY){
+const SetPoint = function(posX, posY){
     
     this.createPoint(posX, posY);
     
-}
+};
 
 SetPoint.prototype.createPoint = function(posX, posY){
 
@@ -26,24 +26,24 @@ SetPoint.prototype.createPoint = function(posX, posY){
     //Sounds.playSound(posX, posY, note);
     this.makeTransparent(point, 0.6, 300);
     this.sizeChange(point);
-}
+};
 
 /*********
  effects
 *********/
 SetPoint.prototype.makeTransparent = function(point, opacityVal, removeTime){
     setTimeout(function(){point.style.opacity = opacityVal},removeTime);
-}
+};
 
 SetPoint.prototype.sizeChange = function(point){
     let sizeto = 16;
     //let xyoffsetWhenChanged = 300;
     let offset = 200;
     setTimeout(function(){
-        point.style.height = sizeto+"px"
+        point.style.height = sizeto+"px";
         point.style.width = sizeto+"px"      
     },offset);   
-}
+};
 
 const positioning = {
 
@@ -79,5 +79,5 @@ const positioning = {
         this.points = [];
     }
 
-}
+};
 

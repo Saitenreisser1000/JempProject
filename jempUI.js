@@ -5,6 +5,7 @@ document.querySelector('#startbutton').addEventListener("click", e => {
     if(Tone.Transport.state === 'started')
         Tone.Transport.pause()
     else{
+        loadSong()
         _sampler.sync()
         Tone.Transport.start()
 

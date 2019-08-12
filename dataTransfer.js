@@ -1,4 +1,4 @@
-/*var table = new Tabulator("#songTable", {
+/*const table = new Tabulator("#songTable", {
     height:"311px",
     layout:"fitColumns",
     ajaxURL:"http://localhost/guitarJempPHP/gJSaveLoadSong.php",
@@ -17,9 +17,9 @@
 
     //select song
     rowClick:function(e, row){
-        Tone.Transport.cancel()
-        var loadedSongData = row.getData()
-        document.querySelector('#loadedSong').innerHTML = loadedSongData.songName
+        Tone.Transport.cancel();
+        var loadedSongData = row.getData();
+        document.querySelector('#loadedSong').innerHTML = loadedSongData.songName;
         prepareLoadedSong.setSong(loadedSongData)
     },
 
@@ -28,11 +28,11 @@
     //load default song
     dataLoaded:function(data){
         var defaultSong = data[0];          //choose default song
-        document.querySelector('#loadedSong').innerHTML = defaultSong.songName
+        document.querySelector('#loadedSong').innerHTML = defaultSong.songName;
         prepareLoadedSong.setSong(defaultSong)
     }
-});*/
-
+});
+*/
 saveSong = function(songName, songDatas){
 
     $.ajax({
@@ -46,7 +46,7 @@ saveSong = function(songName, songDatas){
             //update div
     }
 })
-}
+};
                       
 loadSong = function(){
 
@@ -64,6 +64,6 @@ loadSong = function(){
                 prepareLoadedSong.setSong(data[0])
             }
         }
-}
+};
 
 

@@ -1,27 +1,38 @@
 prepareLoadedSong = {
 
     setSong(jempSong){
-        this.jempSong = jempSong
-        this._separatejempTone()
-        jempSequencer.scheduleJempTones()
+        //this.jempSong = jempSong
+        this._separatejempTone(jempSong)
     },
 
-    _separatejempTone(){
-        this.time = [];
-        this.yPos = [];
-        this.xPos = [];
-        this.jempSong = this.jempSong.songData.split(',');
+    _separatejempTone(jempSong){
+
+        this.toneCounter = 0;
+        jempSong = jempSong.songData.split(',');
         //iterate over songdata decrypt and set as array
-        for(let i = 0; i < this.jempSong.length; i++){
-            let songDecr = this.jempSong[i];
+        for(let i = 0; i < jempSong.length; i++){
+            let songDecr = jempSong[i];
             songDecr = songDecr.split('|');
-            //tone-attributes in array
-            this._combineAsToneJS(songDecr[0],parseInt(songDecr[1]),parseInt(songDecr[2]))
-        }
-    },
 
-    //jempSequencer.addTonesToList("A2", "0:3", 1, 2, 3)
-    _combineAsToneJS(time, posX, posY){
-        jempSequencer.addTonesToList(positionToTone(posX, posY), time, 1, posX, posY)
+            /***add tones to schedule****/
+            let jToneX = songDecr[1];
+            let jToneY = songDecr[2];
+
+            //gets tone from position
+            let jTone = _numberToToneWrapper(_getsound(parseInt(songDecr[1]),parseInt(songDecr[2])));
+            let jempTime = songDecr[0];
+
+            Tone.Transport.schedule(function(){
+                //sounds
+                _sampler.triggerAttack(jTone);
+                //points
+                Tone.Draw.schedule(function(){
+                    positioning.set(this.toneCounter, jToneX , jToneY);
+
+            })}, jempTime);
+            this.toneCounter++
+
+        }
     }
 }
+

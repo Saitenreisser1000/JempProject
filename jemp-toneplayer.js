@@ -49,7 +49,7 @@ const _sampler = new Tone.Sampler({
     }, {
         "release" : 1,
         "baseUrl" : "./audio/"
-    }).sync().toMaster()
+    }).toMaster()
 
 
 
@@ -174,22 +174,22 @@ function _getsound(posX, posY){
 
     let soundNr = 0;
     
-    if(posY == 0){ 
+    if(posY === 0){
         soundNr = posX+0;
     }
-    if(posY == 1){
+    if(posY === 1){
         soundNr = posX+5;
     }
-    if(posY == 2){
+    if(posY === 2){
         soundNr = posX+10;
     }
-    if(posY == 3){
+    if(posY === 3){
         soundNr = posX+15;
     }
-    if(posY == 4){
+    if(posY === 4){
         soundNr = posX+19;
     }
-    if(posY == 5){
+    if(posY === 5){
         soundNr = posX+24;
     }
     return soundNr;                              
