@@ -5,10 +5,18 @@ prepareLoadedSong = {
         this._separatejempTone(jempSong)
     },
 
+    /**
+     * split jempSong into jempTones [time, posX, posY]
+     * split jempSong into position x [1], position y [2]
+     * @param jempSong
+     * @private
+     */
+
     _separatejempTone(jempSong){
 
         this.toneCounter = 0;
         jempSong = jempSong.songData.split(',');
+
         //iterate over songdata decrypt and set as array
         for(let i = 0; i < jempSong.length; i++){
             let songDecr = jempSong[i];

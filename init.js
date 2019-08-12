@@ -8,6 +8,7 @@
     recordlayer.recordFields();
     $('.recordPoint').hide();
     recordlayer.recordInit()
+    loadSong()
     
     //set transport _fader to 0
     //document.getElementById("transportFader").max = 10;

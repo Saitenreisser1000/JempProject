@@ -2,26 +2,16 @@
 /*Sequencer********************************/
 
 document.querySelector('#startbutton').addEventListener("click", e => {
-    if(Tone.Transport.state === 'started')
-        Tone.Transport.pause()
-    else{
-        loadSong()
-        _sampler.sync()
-        Tone.Transport.start()
-
-    }
-})
+   jempSequencer.seqStartPauseToggle();
+});
 
 document.querySelector('#endbutton').addEventListener("click", e => {
-    jempSequencer._initDrawCounter()
-    Tone.Transport.stop()
-    jempSequencer._toneCounter = 0
-    positioning.unSetAll()
-})
+    jempSequencer.sequencerStop();
+});
 
 document.querySelector('#bpmSpeed').addEventListener("change", e => {
     Tone.Transport.bpm.value = document.querySelector('#bpmSpeed').value
-})
+});
 
 //test send to php
 document.querySelector('#loadbutton').addEventListener('click', () =>{
@@ -37,6 +27,7 @@ function updateTime() {
     requestAnimationFrame(updateTime)
     document.querySelector('#showBpm').textContent = Tone.Transport.position
     jempSequencer._setSequencerEnd(7)
+    //jempSequencer.sequencerLoop()
     moveFader()
 }
 
@@ -67,7 +58,7 @@ $('#recordbutton').click(function(){
     $(".recordPoint").toggle("fast");
     $("#inputbox").toggle("fast");
     Tone.Transport.stop()
-    _sampler.unsync()
+    //_sampler.unsync()
 });
 
 //which point is pressed
