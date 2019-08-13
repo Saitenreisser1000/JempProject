@@ -78,7 +78,7 @@ const recordlayer = {
     clickRecorder: function(elem){
         var x = elem.getAttribute("fretPos");
         var y = elem.getAttribute("stringPos");
-        playTone(parseInt(x), parseInt(y))
+        playTone(parseInt(x), parseInt(y));
         this.recordContainer.push(this.quarterCount().toString()+"|"+x+"|"+y)
     },
 
@@ -87,8 +87,8 @@ const recordlayer = {
     counter : 0,
 
     quarterCount: function(){
-        this.counter++
-        this.quarter = (this.counter % 4) + 1
+        this.counter++;
+        this.quarter = (this.counter % 4) + 1;
         if (this.quarter === 1) {
             this.bar++
         }
@@ -99,9 +99,7 @@ const recordlayer = {
     getRecorded: function(){
         return this.recordContainer.toString();
     }
-}
-
-
+};
 
 
 //song is saved
