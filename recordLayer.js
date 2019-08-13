@@ -101,7 +101,6 @@ const recordlayer = {
     }
 };
 
-
 //song is saved
 $(document).ready(function() {
     $('#savebutton').click(function() {
