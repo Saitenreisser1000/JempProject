@@ -14,10 +14,10 @@ document.querySelector('#bpmSpeed').addEventListener("change", e => {
 });
 
 //test send to php
-document.querySelector('#loadbutton').addEventListener('click', () =>{
+/*document.querySelector('#loadbutton').addEventListener('click', () =>{
     loadSong();
 
-});
+});*/
 
 
 

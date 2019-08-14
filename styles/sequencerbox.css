@@ -1,14 +1,10 @@
 #inputbox{
     position: absolute;
-    background-color: #f0f0f0;
+    background-color: grey;
     z-index: 2;
     top: 290px;
-    left: 90px;
-    height: 100px;
-    width: 275px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
+    height: 150px;
+    width: 100%;
 }
 
 #bpmBox{
@@ -20,17 +16,24 @@
     position:absolute;
     width: 210px;
     top:5px;
-    left: 50px;
+    left: 90px;
 }
 
 #showBpm{
     position:absolute;
     background-color: white;
-    top: 5px;
-    left: 10px;
+    top: 60px;
+    left: 300px;
    
     padding: 5px;
     border-color: black;
+}
+
+#transportFader{
+    position:absolute;
+    height:     50px;
+    width:      800px;
+    left:  90px;
 }
 
 seqButton.button{
@@ -46,7 +49,7 @@ seqButton.button{
     text-decoration:none;
     font-family:'Arial',sans-serif;
     font-weight:600;
-    color:black;
+    color:#2B353E;
     background-color:darkgoldenrod;
     text-align:center;
     transition: all 0.2s;
@@ -61,14 +64,11 @@ seqButton.button:active{
 }
 
 #startbutton{
-    top: 10px;
-    left:10px;
-}
-#pausebutton{
-    top: 10px;
+    top: 110px;
     left:90px;
 }
+
 #endbutton{
-    top: 10px;
-    left:182px;
+    top: 110px;
+    left:200px;
 }

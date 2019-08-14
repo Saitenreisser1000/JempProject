@@ -38,6 +38,7 @@ jempSequencer = {
         document.querySelector("#transportFader").max = faderMax
         if(this._sequencer.seconds >= faderMax){
             this.sequencerPause()
+            setTimeout(() => {this._sequencer.position = 0}, 300);
             return true
         }else{
             return false

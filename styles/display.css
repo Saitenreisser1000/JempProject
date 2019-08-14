@@ -1,7 +1,7 @@
 .display{
     position: absolute;
     left:90px;
-    background-color: beige;
+    background-color: #959799;
     margin: 5px;
     width: 80px;
     height: 40px;
@@ -9,6 +9,6 @@
 .displayContent{
     margin:2px;
     float:left;
-    color:grey;
+    color:blue;
     font-size: 30px;
 }

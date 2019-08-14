@@ -4,7 +4,8 @@ body{
 }
 
 #topfield{
-    background-color: #494D53;  
+    background-color: #494D53;
+    /*background-color: #2B353E;*/
     height:     150px;
     width:      auto;
     text-align: center;
@@ -16,36 +17,11 @@ body{
 
 #backBox{
                
-    background-color:#959799;                
+    background-color:#494D53;
     position:   relative;
     width:      auto;
-    height:     550px;
-    border-color:black;              
-}
-
-#transportBox{
-    position: absolute;
-    background-color:white;
-    bottom:     70px;
-    margin-left:90px;
-    height:     50px;
-    width:      800px;
-}
-
-#transportLine{
-    position: absolute;
-    left: 50px;
-    background-color: black;
-    height:     50px;
-    width:      5px;
-    border-radius: 20%;
-    
-}
-
-#transportFader{
-    position:absolute;
-     height:     50px;
-    width:      800px;
+    height:     480px;
+    border-color:black;
 }
 
 #point{   
@@ -57,11 +33,4 @@ body{
     z-index:    5;
     
 }
-.fretOrientPos{
-    position:   absolute;
-    background-color: goldenrod;
-    height:     150px;
-    width:      50px;
-    top:        20px;
-    z-index:    0;
-}
+

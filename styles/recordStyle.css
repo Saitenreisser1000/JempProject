@@ -16,7 +16,7 @@
     position: absolute;
     height: 50px;
     width: 100%;
-    background:#f0f0f0;
+    background:grey;
     z-index: 5;
 }
 
@@ -26,10 +26,12 @@
     height:30px;
     width:200px;
     top:10px;
-    left:450px; 
+    left:380px;
     text-align: right;
     padding-right: 5px;
     background: grey;
+    color: aliceblue;
+    font-family: "Arial", San-serif;
 }
 
 #recordbutton{

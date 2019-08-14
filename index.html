@@ -7,18 +7,16 @@
         <link rel="stylesheet" href="styles/guitarJemp.css">
         <link rel="stylesheet" href="styles/guitarStyle.css">
         <link rel="stylesheet" href="styles/display.css">
-        <link rel="stylesheet" href="styles/radiobutton.css">
         <link rel="stylesheet" href="styles/sequencerbox.css">
         <link rel="stylesheet" href="styles/recordStyle.css">
-        <link href="https://unpkg.com/tabulator-tables@4.2.1/dist/css/tabulator.min.css" rel="stylesheet">
-        
+        <link href="node_modules/tabulator-tables/dist/css/tabulator.css" rel="stylesheet">
+        <link href="node_modules/tabulator-tables/dist/css/bootstrap/tabulator_bootstrap4.css" rel="stylesheet">
+
         <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.js"></script>
         <script type="text/javascript" src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-        <link href="dist/css/tabulator.css" rel="stylesheet">
-        <script type="text/javascript" src="dist/js/tabulator.js"></script>
-
+        <script type="text/javascript" src="node_modules/tabulator-tables/dist/js/tabulator.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tone/13.8.12/Tone.js"></script>
-        
+
     </head>
     
     <body>
@@ -44,7 +42,7 @@
                 <div id="recordField">
                     <seqButton class="button" id="recordbutton">Record</seqButton>
                     <seqButton class="button" id="savebutton">Save</seqButton>
-                    <seqButton class="button" id="loadbutton">Load</seqButton>
+                    <!--seqButton class="button" id="loadbutton">Load</seqButton-->
                     <div id="loadedSong"></div>
                 </div>
 
@@ -68,26 +66,22 @@
                 
         <!--box for sequencerinput-->
                 <div id="inputbox">
+                    <input type="range" step="0.01" id="transportFader">
                     <seqButton class="button" id="startbutton">Start</seqButton>
                     <seqButton class="button" id="endbutton">Reset</seqButton>
-                    
                     <div id="bpmBox">
                         <input type="range" id="bpmSpeed" min="0" max="200" step="1" >
                         <label id ="showBpm"></label>
                     </div>
+
                 </div>               
             </div>
 
-            
-                <div id="transportBox">
-                    <!--div id="transportLine"></div-->
-                    <input type="range" step="0.01" id="transportFader">
-                </div>
 
         </div>
-        <div class="songlistBox">
-            <div class="songlistHeading"></div>
 
+        <!--div class="songlistBox"-->
+            <!--div class="songlistHeading"-->
             <div id="songTable"></div>
 
         </div>
